@@ -70,7 +70,7 @@ def get_hashtags(input_str):
 # Define the Streamlit app
 def main():
     st.title("Hashtag Generator")
-    input_str = st.text_input("Enter some text to generate hashtags for:")
+    input_str = st.text_input("Enter a keyword:")
     if input_str:
         if st.button("Generate Hashtags"):
             hashtags = get_hashtags(input_str)
